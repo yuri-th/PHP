@@ -9,16 +9,17 @@
 </head>
 
 <body>
-    <form action="result.php" method="POST">
+    <form action="result.php" method="GET">
         <label>お名前：<input type="text" name="name"></label>
         <br />
-        <label>ご希望商品：<input type="radio" name="product" value="Aセット">Aセット<input type="radio" name="product"
-                value="Bセット">Bセット<input type="radio" name="product" value="Cセット">Cセット</label>
+        <label>ご希望商品：Aセット<input type="radio" name="product" value="Aセット">Bセット<input type="radio" name="product"
+                value="Bセット">Cセット<input type="radio" name="product" value="Cセット"></label>
         <br />
-        <label>注文数：<input type="number" name="orders">
-            <br />
-            <input type="submit" name="submit" value="送信" />
+        <label>注文数：<input type="number" name="order"></label>
+        <br />
+        <input type="submit" name="submit" value="送信" />
     </form>
+
 </body>
 
 </html>

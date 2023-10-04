@@ -1,18 +1,16 @@
 <?php
+function area($bottom, $height, $upper)
+{
+    $triangle = $bottom * $height / 2;
+    echo "三角形の面積は" . $triangle . "c㎡ です。";
 
-function getSquareArea($base, $height)
-{
-    return $base * $height;
-}
-function getTriangleArea($base, $height)
-{
-    return $base * $height / 2;
-}
-function getTrapezoidArea($upperBase, $lowerBase, $height)
-{
-    return ($upperBase + $lowerBase) * $height / 2;
+    $square = $bottom * $height;
+    echo "四角形の面積は" . $square . "c㎡ です。";
+
+
+    $trapezoid = ($bottom + $upper) * $height / 2;
+    echo "台形の面積は" . $trapezoid . "c㎡ です。";
+
 }
 
-echo getSquareArea(5, 5) . "\n";
-echo getTriangleArea(7, 8) . "\n";
-echo getTrapezoidArea(4, 5, 4);
+echo area(2, 8, 3);

@@ -1,11 +1,8 @@
 <?php
-$name1 = "Tanaka"."Jiro";
-$last_name ="Yamada";
-$first_name ="Saburo";
+$name = "Tanaka";
+$last_name = "Yamada";
+$first_name = "Saburo";
 
-echo $name1;
+echo $name . "Jiro";
 echo "<br />";
 echo $last_name . $first_name;
-
-
-
